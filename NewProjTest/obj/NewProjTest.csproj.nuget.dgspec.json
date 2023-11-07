@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tyler\\Source\\Repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj": {}
+    "C:\\Users\\Tyler\\source\\repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tyler\\Source\\Repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj": {
+    "C:\\Users\\Tyler\\source\\repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tyler\\Source\\Repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj",
+        "projectUniqueName": "C:\\Users\\Tyler\\source\\repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj",
         "projectName": "NewProjTest",
-        "projectPath": "C:\\Users\\Tyler\\Source\\Repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj",
+        "projectPath": "C:\\Users\\Tyler\\source\\repos\\Proj3Warehouse\\NewProjTest\\NewProjTest.csproj",
         "packagesPath": "C:\\Users\\Tyler\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Tyler\\Source\\Repos\\Proj3Warehouse\\NewProjTest\\obj\\",
         "projectStyle": "PackageReference",
