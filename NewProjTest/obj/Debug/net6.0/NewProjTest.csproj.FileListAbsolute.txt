@@ -1,0 +1,14 @@
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\bin\Debug\net6.0\NewProjTest.exe
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\bin\Debug\net6.0\NewProjTest.deps.json
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\bin\Debug\net6.0\NewProjTest.runtimeconfig.json
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\bin\Debug\net6.0\NewProjTest.dll
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\bin\Debug\net6.0\NewProjTest.pdb
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\NewProjTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\NewProjTest.AssemblyInfoInputs.cache
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\NewProjTest.AssemblyInfo.cs
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\NewProjTest.csproj.CoreCompileInputs.cache
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\NewProjTest.dll
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\refint\NewProjTest.dll
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\NewProjTest.pdb
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\NewProjTest.genruntimeconfig.cache
+C:\Users\Tyler\Source\Repos\Proj3Warehouse\NewProjTest\obj\Debug\net6.0\ref\NewProjTest.dll
