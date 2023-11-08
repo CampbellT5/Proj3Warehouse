@@ -25,19 +25,24 @@ namespace NewProjTest
         public int TimeInUse { get; set; }
         public int TimeNotInUse { get; set; }
 
+        public Truck currentTruck { get; set; }
+
+        private static int id = 0000001;
+
         /// <summary>
-        /// general method to create an empty dock
+        /// default constructor to create an empty dock
         /// </summary>
         /// <param name="Id">the name/UIN of the dock</param>
-        public Dock(string Id)
+        public Dock()
         {
-            this.Id = Id;
+            Id = id++.ToString();
             Line = new Queue<Truck>();
             TotalSales = 0;
             TotalCrates = 0;
             TotalTrucks = 0;
             TimeInUse = 0;
             TimeNotInUse = 0;
+            currentTruck = null;
         }
 
         /// <summary>
@@ -52,15 +57,32 @@ namespace NewProjTest
         }
 
         /// <summary>
-        /// the method pulls a truck from the front of the line at a dock
+        /// the method pulls a truck from the front of the line at a dock to be unloaded
         /// </summary>
         /// <returns>returns the 1st truck</returns>
         public Truck SendOff()
         {
             // does this method also need to make sure the truck is fully unloaded before it dequeues the truck? that needs to be done somewhere
             // as each crate is unloaded, the value can be added to TotalSales, and unloading a crate adds one time unit to TimeInUse
-            return Line.Dequeue();
+            this.currentTruck = Line.Dequeue();
+            return currentTruck;
 
+        }
+
+        public bool Unloading()
+        {
+            if (currentTruck == null)
+            {
+                return false;
+            }
+            else if (currentTruck.Trailer.Peek() == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
     }

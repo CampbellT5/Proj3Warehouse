@@ -13,7 +13,18 @@ namespace NewProjTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            Warehouse warehouse = new Warehouse();
+
+            warehouse.Run();
+
+            /* added this for testing just to see if the docks werw created correctly. can use for troubleshooting
+             * foreach (Dock dock in warehouse.Docks)
+            {
+                Console.WriteLine(dock.Id);
+            }
+            */
+
         }
     }
 }

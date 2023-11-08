@@ -19,7 +19,9 @@ namespace NewProjTest
     {
         public string Driver { get; set; }
         public string DeliveryCompany { get; set; }
-        private Stack<Crate> Trailer;
+        public int CrateCount { get; set; }
+        public double TruckValue { get; set; }
+        public Stack<Crate> Trailer; 
 
         /// <summary>
         /// creates a truck with a driver and company sponsor and stack of crates
@@ -31,6 +33,16 @@ namespace NewProjTest
             this.Driver = driver;
             this.DeliveryCompany = deliveryCompany;
             Trailer = new Stack<Crate>();
+            TruckValue = 0;
+
+            // currently having each truck start with a random number of crates between 5 and 15 
+            Random rand = new Random();
+            CrateCount = rand.Next(5,16);
+            for (int i = 0; i < CrateCount; i++)
+            {
+                Load(new Crate());
+            }
+
         }
 
         /// <summary>
@@ -48,7 +60,11 @@ namespace NewProjTest
         /// <returns>the crate at the top of the stack</returns>
         public Crate Unload()
         {
-            return Trailer.Pop();
+            Crate crate = Trailer.Pop();
+
+            // also accumulating the crate value while removing them from the truck
+            TruckValue += crate.Price;
+            return crate;
         }
     }
 }
