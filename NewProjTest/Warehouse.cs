@@ -46,5 +46,41 @@ namespace NewProjTest
         //crate unloaded, truck is empty AND there is NOT another truck in the dock
 
         //potentially need to eventually create new method that opens new docks as it gets closer to noon and closes docks as it gets further away
+
+
+
+        //csv file to be created:
+        //needs to return:  
+        //time incrememnt of crate being unloaded
+        //truck driver's name
+        //delivery company name
+        //crate's id number
+        //crate's value
+        //a string for one 3 scenarios depending on what happened
+        //crate unloaded with truck still having more crates
+        //crate unloaded, truck is empty and no other trucks in line
+        //crate unloaded, truck empty and another truck is in line
+
+        //to do this:
+        //might be easier to create a new class that creates a Data Table
+        //within this class, will need to make a DataTable table that is a new DataTable();
+        //use table.Columns.Add("name of column", typeof(string/int/etc));
+        //do this for each column needed (use above info to do
+        //use table.Rows.Add(specific info to be added)? might have to tweak this
+
+        //format might look like:
+        //public static class CsvTable
+        //{
+        //public static DataTable CreateCsv()
+        //{
+        //DataTable table = new DataTable();
+        //table.Columns.Add("Time Unloaded", typeof(int));
+        //table.Columns.Add("Driver's name", typeof(string));
+        //etc
+
+
+
+
+
     }
 }
