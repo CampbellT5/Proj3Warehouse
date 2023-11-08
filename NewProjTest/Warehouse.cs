@@ -22,6 +22,9 @@ namespace NewProjTest
 
         public int timeIntervals { get; set; }
 
+        /// <summary>
+        /// generate empty warehouse at beginning of day
+        /// </summary>
         public Warehouse()
         {
             Docks = new List<Dock>();
@@ -29,6 +32,9 @@ namespace NewProjTest
             timeIntervals = 1;  //starting this at 1 for now instead of 0 because we will be using the time intervals for math equations later
         }
 
+        /// <summary>
+        /// runs the whole scenario for the warehouse
+        /// </summary>
         public void Run()
         {
             //this is probably where we could start creating the new trucks and adding them to the Dock line etc. or calling other methods from here to do that
@@ -82,6 +88,9 @@ namespace NewProjTest
                     else if (Docks[i].Unloading())
                     {
                         //if still unloading do something here
+
+                        //if it is still unloading, then logically would we need to do anything? besides just add the truck to the end of the line
+                        //or send to another open dock if there are any? - mel
                     }
                     else
                     {
@@ -109,6 +118,10 @@ namespace NewProjTest
 
         }
 
+        /// <summary>
+        /// allows user to input number of docks in a warehouse
+        /// </summary>
+        /// <returns>returns a dock count for how many counts there are in a warehouse</returns>
         public int DockCount()
         {
             int dockCount = 0;
@@ -128,8 +141,6 @@ namespace NewProjTest
             }
             return dockCount;
         }
-
-
 
 
         //create a method that returns a csv file

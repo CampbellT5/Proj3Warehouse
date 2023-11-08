@@ -69,6 +69,10 @@ namespace NewProjTest
 
         }
 
+        /// <summary>
+        /// shows whether a truck is currently being unloaded at a dock
+        /// </summary>
+        /// <returns>false if truck is empty or no truck at all; returns true otherwise</returns>
         public bool Unloading()
         {
             if (currentTruck == null)
